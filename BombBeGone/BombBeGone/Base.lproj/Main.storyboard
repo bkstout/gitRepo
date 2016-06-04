@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BombBeGone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blueBomb" translatesAutoresizingMaskIntoConstraints="NO" id="ZQr-ck-ljE">
+                                <rect key="frame" x="24" y="99" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redBomb" translatesAutoresizingMaskIntoConstraints="NO" id="78I-ON-HxF">
+                                <rect key="frame" x="150" y="99" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBR-86-URl">
+                                <rect key="frame" x="118" y="270" width="179" height="30"/>
+                                <state key="normal" title="Hide Blue Bomb"/>
+                                <connections>
+                                    <action selector="blueBeGone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RuE-AW-hFf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCO-wq-jHb">
+                                <rect key="frame" x="118" y="308" width="179" height="30"/>
+                                <state key="normal" title="Hide Red Bomb">
+                                    <color key="titleColor" red="0.47058823529999999" green="0.0" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="redBeGone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6y8-Go-kAi"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zd-e4-06D">
+                                <rect key="frame" x="123" y="346" width="166" height="30"/>
+                                <color key="backgroundColor" red="0.018697584299715735" green="0.58822390539005243" blue="0.049608104554768273" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Bring 'em All Back!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="noneGone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wgd-Hj-nCU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="allBackButton" destination="7Zd-e4-06D" id="blL-MH-mhO"/>
+                        <outlet property="blueBomb" destination="ZQr-ck-ljE" id="SKX-ob-ZnL"/>
+                        <outlet property="blueButton" destination="eBR-86-URl" id="s82-1N-rtg"/>
+                        <outlet property="redBomb" destination="78I-ON-HxF" id="yKD-MZ-gKW"/>
+                        <outlet property="redButton" destination="qCO-wq-jHb" id="71W-ZX-Dh0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="428.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blueBomb" width="131" height="131"/>
+        <image name="redBomb" width="127" height="127"/>
+    </resources>
+</document>
