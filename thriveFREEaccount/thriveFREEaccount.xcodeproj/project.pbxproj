@@ -293,6 +293,7 @@
 				8D49EE1C1D03B1470099E28E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
