@@ -30,23 +30,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ieB-9A-Qek">
-                                <rect key="frame" x="225" y="498" width="150" height="2"/>
-                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="epK-7I-YbU" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="7VZ-Wp-Lyx"/>
-                            <constraint firstItem="ieB-9A-Qek" firstAttribute="top" secondItem="3fz-29-03a" secondAttribute="bottom" constant="53" id="C6M-JP-9cE"/>
                             <constraint firstItem="3fz-29-03a" firstAttribute="top" secondItem="epK-7I-YbU" secondAttribute="bottom" constant="8" id="DkA-cf-uOA"/>
-                            <constraint firstItem="ieB-9A-Qek" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Jgw-gR-x7J"/>
                             <constraint firstItem="epK-7I-YbU" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" id="bXM-9D-VZC"/>
                             <constraint firstItem="epK-7I-YbU" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" id="eAi-9Z-ffL"/>
                             <constraint firstAttribute="trailing" secondItem="epK-7I-YbU" secondAttribute="trailing" id="eiz-Bz-zdx"/>
-                            <constraint firstItem="ieB-9A-Qek" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gdT-QG-9bZ"/>
                             <constraint firstItem="epK-7I-YbU" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" id="h5N-JC-aou"/>
                             <constraint firstItem="3fz-29-03a" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="k86-Bg-kxC"/>
-                            <constraint firstAttribute="trailing" secondItem="ieB-9A-Qek" secondAttribute="trailing" id="nzf-Dw-bjD"/>
                         </constraints>
                     </view>
                 </viewController>
