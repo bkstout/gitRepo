@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8D49EE081D03B1470099E28E /* thriveFREEaccount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thriveFREEaccount.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D49EE081D03B1470099E28E /* ThrivePromoter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThrivePromoter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D49EE0B1D03B1470099E28E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D49EE0D1D03B1470099E28E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8D49EE101D03B1470099E28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		8D49EE091D03B1470099E28E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D49EE081D03B1470099E28E /* thriveFREEaccount.app */,
+				8D49EE081D03B1470099E28E /* ThrivePromoter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +67,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D49EE071D03B1470099E28E /* thriveFREEaccount */ = {
+		8D49EE071D03B1470099E28E /* ThrivePromoter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D49EE1A1D03B1470099E28E /* Build configuration list for PBXNativeTarget "thriveFREEaccount" */;
+			buildConfigurationList = 8D49EE1A1D03B1470099E28E /* Build configuration list for PBXNativeTarget "ThrivePromoter" */;
 			buildPhases = (
 				8D49EE041D03B1470099E28E /* Sources */,
 				8D49EE051D03B1470099E28E /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = thriveFREEaccount;
+			name = ThrivePromoter;
 			productName = thriveFREEaccount;
-			productReference = 8D49EE081D03B1470099E28E /* thriveFREEaccount.app */;
+			productReference = 8D49EE081D03B1470099E28E /* ThrivePromoter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8D49EE031D03B1470099E28E /* Build configuration list for PBXProject "thriveFREEaccount" */;
+			buildConfigurationList = 8D49EE031D03B1470099E28E /* Build configuration list for PBXProject "ThrivePromoter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D49EE071D03B1470099E28E /* thriveFREEaccount */,
+				8D49EE071D03B1470099E28E /* ThrivePromoter */,
 			);
 		};
 /* End PBXProject section */
@@ -254,8 +254,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = thriveFREEaccount/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.offtheroll.thriveFREEaccount;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.offtheroll.ThrivePromoter;
+				PRODUCT_NAME = ThrivePromoter;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -268,8 +268,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = thriveFREEaccount/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.offtheroll.thriveFREEaccount;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.offtheroll.ThrivePromoter;
+				PRODUCT_NAME = ThrivePromoter;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -277,7 +277,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8D49EE031D03B1470099E28E /* Build configuration list for PBXProject "thriveFREEaccount" */ = {
+		8D49EE031D03B1470099E28E /* Build configuration list for PBXProject "ThrivePromoter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8D49EE181D03B1470099E28E /* Debug */,
@@ -286,7 +286,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D49EE1A1D03B1470099E28E /* Build configuration list for PBXNativeTarget "thriveFREEaccount" */ = {
+		8D49EE1A1D03B1470099E28E /* Build configuration list for PBXNativeTarget "ThrivePromoter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8D49EE1B1D03B1470099E28E /* Debug */,

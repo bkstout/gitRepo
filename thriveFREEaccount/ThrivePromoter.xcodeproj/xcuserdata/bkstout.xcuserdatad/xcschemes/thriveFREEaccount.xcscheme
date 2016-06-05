@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8D49EE071D03B1470099E28E"
-               BuildableName = "thriveFREEaccount.app"
-               BlueprintName = "thriveFREEaccount"
-               ReferencedContainer = "container:thriveFREEaccount.xcodeproj">
+               BuildableName = "ThrivePromoter.app"
+               BlueprintName = "ThrivePromoter"
+               ReferencedContainer = "container:ThrivePromoter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8D49EE071D03B1470099E28E"
-            BuildableName = "thriveFREEaccount.app"
-            BlueprintName = "thriveFREEaccount"
-            ReferencedContainer = "container:thriveFREEaccount.xcodeproj">
+            BuildableName = "ThrivePromoter.app"
+            BlueprintName = "ThrivePromoter"
+            ReferencedContainer = "container:ThrivePromoter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8D49EE071D03B1470099E28E"
-            BuildableName = "thriveFREEaccount.app"
-            BlueprintName = "thriveFREEaccount"
-            ReferencedContainer = "container:thriveFREEaccount.xcodeproj">
+            BuildableName = "ThrivePromoter.app"
+            BlueprintName = "ThrivePromoter"
+            ReferencedContainer = "container:ThrivePromoter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8D49EE071D03B1470099E28E"
-            BuildableName = "thriveFREEaccount.app"
-            BlueprintName = "thriveFREEaccount"
-            ReferencedContainer = "container:thriveFREEaccount.xcodeproj">
+            BuildableName = "ThrivePromoter.app"
+            BlueprintName = "ThrivePromoter"
+            ReferencedContainer = "container:ThrivePromoter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
