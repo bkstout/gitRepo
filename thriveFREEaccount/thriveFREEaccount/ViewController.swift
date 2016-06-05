@@ -8,8 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+var baseURL = "le-vel.com"
+var myCustID = "bkstout"
+var promoterURL = "https://\(myCustID).\(baseURL)"
+var freeAcctURL = "\(promoterURL)/login"
 
+class ViewController: UIViewController {
+    
     @IBOutlet weak var thriveExperience: UIImageView!
     @IBOutlet weak var CapsulesMen: UIButton!
     @IBOutlet weak var freeAccount: UIButton!
@@ -40,7 +45,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func makeFreeAccount(sender: AnyObject) {
-        let freeAcctUrl = NSURL (string: "https://bkstout.le-vel.com/login");
+        let freeAcctUrl = NSURL (string: "\(promoterURL)/login");
         let requestAct = NSURLRequest(URL: freeAcctUrl!);
         myWebView.loadRequest(requestAct);
 

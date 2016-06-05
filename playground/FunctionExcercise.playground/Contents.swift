@@ -29,3 +29,7 @@ func divide(num7: Double, num8: Double) -> Double {
 }
 
 divide(17, num8: 4)
+
+var baseURL = "le-vel.com"
+var promoterID = "bkstout"
+var freeAcctURL = "http://\(promoterID).\(baseURL)/login"
