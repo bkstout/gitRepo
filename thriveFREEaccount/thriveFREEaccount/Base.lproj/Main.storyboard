@@ -32,15 +32,22 @@
                                     <constraint firstAttribute="width" constant="56" id="y3f-tP-5py"/>
                                 </constraints>
                                 <state key="normal" image="THRIVEPacket_M">
-                                    <attributedString key="attributedTitle"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Men's Capsules">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="getMensCapsules:" destination="BYZ-38-t0r" eventType="touchUpInside" id="705-Ij-0y6"/>
                                 </connections>
                             </button>
-                            <webView opaque="NO" contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HPz-qz-5Rc">
+                            <webView opaque="NO" contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPz-qz-5Rc">
                                 <rect key="frame" x="25" y="289" width="555" height="303"/>
                                 <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="deviceRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWO-ov-bJg">
                                 <rect key="frame" x="438" y="181" width="142" height="30"/>
