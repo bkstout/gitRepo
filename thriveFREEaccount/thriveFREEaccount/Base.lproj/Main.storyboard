@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="thriveFREEaccount" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThrivePromoter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -49,6 +49,20 @@
                                     <action selector="makeFreeAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uT3-Zw-BNI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oNI-OU-RSb">
+                                <rect key="frame" x="84" y="183" width="70" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="YwZ-LK-eBm"/>
+                                    <constraint firstAttribute="height" constant="98" id="eLF-lq-pMj"/>
+                                </constraints>
+                                <state key="normal" image="Shakes3">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="getMensCapsules:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kjk-4G-AHP"/>
+                                    <action selector="getShakes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="050-i0-uyq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -59,8 +73,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="HPz-qz-5Rc" secondAttribute="trailing" id="C1B-rC-GFH"/>
                             <constraint firstItem="mWO-ov-bJg" firstAttribute="top" secondItem="YIw-HC-J0i" secondAttribute="bottom" constant="8" id="GOR-vo-PaM"/>
                             <constraint firstItem="YIw-HC-J0i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="V8J-Ym-75m"/>
+                            <constraint firstItem="oNI-OU-RSb" firstAttribute="top" secondItem="YIw-HC-J0i" secondAttribute="bottom" constant="8" id="d6M-tZ-FNx"/>
                             <constraint firstItem="YIw-HC-J0i" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kUo-r7-vYy"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HPz-qz-5Rc" secondAttribute="bottom" id="ouw-7T-C2h"/>
+                            <constraint firstItem="oNI-OU-RSb" firstAttribute="leading" secondItem="rQ2-YM-1qC" secondAttribute="trailing" constant="8" id="qqd-mI-CYf"/>
                             <constraint firstItem="mWO-ov-bJg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="y5z-gp-CKH"/>
                             <constraint firstItem="HPz-qz-5Rc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yat-tI-TTc"/>
                             <constraint firstItem="rQ2-YM-1qC" firstAttribute="top" secondItem="YIw-HC-J0i" secondAttribute="bottom" constant="18" id="zrp-4Q-vS2"/>
@@ -68,6 +84,7 @@
                     </view>
                     <connections>
                         <outlet property="CapsulesMen" destination="rQ2-YM-1qC" id="Mlh-s2-dGy"/>
+                        <outlet property="Shakes" destination="oNI-OU-RSb" id="HLK-kB-PCA"/>
                         <outlet property="freeAccount" destination="mWO-ov-bJg" id="ibf-rD-Esm"/>
                         <outlet property="myWebView" destination="HPz-qz-5Rc" id="8wE-Ij-Ox1"/>
                         <outlet property="thriveExperience" destination="YIw-HC-J0i" id="6TL-JB-8Dz"/>
@@ -79,6 +96,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Shakes3" width="660" height="822"/>
         <image name="THRIVE8week" width="1000" height="260"/>
         <image name="THRIVEPacket_M" width="188" height="312"/>
     </resources>
