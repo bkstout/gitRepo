@@ -19,17 +19,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="THRIVE8week" translatesAutoresizingMaskIntoConstraints="NO" id="YIw-HC-J0i">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="THRIVE8week" translatesAutoresizingMaskIntoConstraints="NO" id="YIw-HC-J0i">
                                 <rect key="frame" x="20" y="28" width="560" height="147"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="YIw-HC-J0i" secondAttribute="height" multiplier="80:21" id="K9z-UK-c2s"/>
+                                    <constraint firstAttribute="width" secondItem="YIw-HC-J0i" secondAttribute="height" multiplier="80:21" id="xMl-z2-Say"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rQ2-YM-1qC">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rQ2-YM-1qC">
                                 <rect key="frame" x="20" y="183" width="56" height="98"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="98" id="xRm-NA-70o"/>
-                                    <constraint firstAttribute="width" constant="56" id="y3f-tP-5py"/>
+                                    <constraint firstAttribute="width" constant="56" id="6VD-uG-pRm"/>
+                                    <constraint firstAttribute="height" constant="98" id="Msz-sU-ooz"/>
                                 </constraints>
                                 <state key="normal" image="THRIVEPacket_M">
                                     <attributedString key="attributedTitle">
@@ -44,23 +44,11 @@
                                     <action selector="getMensCapsules:" destination="BYZ-38-t0r" eventType="touchUpInside" id="705-Ij-0y6"/>
                                 </connections>
                             </button>
-                            <webView opaque="NO" contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPz-qz-5Rc">
-                                <rect key="frame" x="25" y="289" width="555" height="303"/>
-                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="deviceRGB"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                            </webView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWO-ov-bJg">
-                                <rect key="frame" x="438" y="181" width="142" height="30"/>
-                                <state key="normal" title="Add A FREE Account"/>
-                                <connections>
-                                    <action selector="makeFreeAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uT3-Zw-BNI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oNI-OU-RSb">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oNI-OU-RSb">
                                 <rect key="frame" x="84" y="183" width="70" height="98"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="YwZ-LK-eBm"/>
-                                    <constraint firstAttribute="height" constant="98" id="eLF-lq-pMj"/>
+                                    <constraint firstAttribute="width" constant="70" id="qkR-Ox-UlK"/>
+                                    <constraint firstAttribute="height" constant="98" id="qsa-zi-gHo"/>
                                 </constraints>
                                 <state key="normal" image="Shakes3">
                                     <attributedString key="attributedTitle"/>
@@ -70,27 +58,55 @@
                                     <action selector="getShakes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="050-i0-uyq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWO-ov-bJg">
+                                <rect key="frame" x="438" y="181" width="142" height="30"/>
+                                <state key="normal" title="Add A FREE Account"/>
+                                <connections>
+                                    <action selector="makeFreeAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uT3-Zw-BNI"/>
+                                </connections>
+                            </button>
+                            <webView hidden="YES" opaque="NO" contentMode="scaleToFill" scalesPageToFit="YES" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPz-qz-5Rc">
+                                <rect key="frame" x="20" y="20" width="560" height="534"/>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="deviceRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </webView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUm-H3-lU6">
+                                <rect key="frame" x="20" y="562" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.13294159059999999" green="0.81568627449999997" blue="0.024201253360000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneBtnFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yzo-nc-6rD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rQ2-YM-1qC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7d6-DE-v1Z"/>
-                            <constraint firstItem="HPz-qz-5Rc" firstAttribute="top" secondItem="rQ2-YM-1qC" secondAttribute="bottom" constant="8" id="7nJ-vi-Tbu"/>
-                            <constraint firstItem="rQ2-YM-1qC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8a4-yQ-qfl"/>
-                            <constraint firstItem="YIw-HC-J0i" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BOd-KW-oXa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HPz-qz-5Rc" secondAttribute="trailing" id="C1B-rC-GFH"/>
-                            <constraint firstItem="mWO-ov-bJg" firstAttribute="top" secondItem="YIw-HC-J0i" secondAttribute="bottom" constant="8" id="GOR-vo-PaM"/>
-                            <constraint firstItem="YIw-HC-J0i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="V8J-Ym-75m"/>
-                            <constraint firstItem="oNI-OU-RSb" firstAttribute="top" secondItem="YIw-HC-J0i" secondAttribute="bottom" constant="8" id="d6M-tZ-FNx"/>
-                            <constraint firstItem="YIw-HC-J0i" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kUo-r7-vYy"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HPz-qz-5Rc" secondAttribute="bottom" id="ouw-7T-C2h"/>
-                            <constraint firstItem="oNI-OU-RSb" firstAttribute="leading" secondItem="rQ2-YM-1qC" secondAttribute="trailing" constant="8" id="qqd-mI-CYf"/>
-                            <constraint firstItem="mWO-ov-bJg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="y5z-gp-CKH"/>
-                            <constraint firstItem="HPz-qz-5Rc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yat-tI-TTc"/>
-                            <constraint firstItem="rQ2-YM-1qC" firstAttribute="top" secondItem="YIw-HC-J0i" secondAttribute="bottom" constant="18" id="zrp-4Q-vS2"/>
+                            <constraint firstItem="HPz-qz-5Rc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0wE-KZ-SjX"/>
+                            <constraint firstItem="YIw-HC-J0i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2NC-ku-hj2"/>
+                            <constraint firstItem="YIw-HC-J0i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5OA-uW-fQP"/>
+                            <constraint firstItem="SUm-H3-lU6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B58-N8-B6s"/>
+                            <constraint firstItem="oNI-OU-RSb" firstAttribute="leading" secondItem="rQ2-YM-1qC" secondAttribute="trailing" constant="8" id="BSs-5w-b4m"/>
+                            <constraint firstItem="HPz-qz-5Rc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IFf-zt-d1i"/>
+                            <constraint firstItem="SUm-H3-lU6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="K3w-H1-qfO"/>
+                            <constraint firstItem="mWO-ov-bJg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="N5H-O4-ls5"/>
+                            <constraint firstItem="rQ2-YM-1qC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Q1F-Ka-tcH"/>
+                            <constraint firstItem="SUm-H3-lU6" firstAttribute="top" secondItem="HPz-qz-5Rc" secondAttribute="bottom" constant="8" id="RuW-ZP-24U"/>
+                            <constraint firstItem="oNI-OU-RSb" firstAttribute="top" secondItem="YIw-HC-J0i" secondAttribute="bottom" constant="8" id="Tww-rH-MSO"/>
+                            <constraint firstItem="rQ2-YM-1qC" firstAttribute="top" secondItem="YIw-HC-J0i" secondAttribute="bottom" constant="8" id="WCc-Tk-fEG"/>
+                            <constraint firstItem="mWO-ov-bJg" firstAttribute="top" secondItem="YIw-HC-J0i" secondAttribute="bottom" constant="6" id="Wgb-dL-iC8"/>
+                            <constraint firstItem="HPz-qz-5Rc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cOF-Nl-puq"/>
+                            <constraint firstItem="YIw-HC-J0i" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nFQ-7W-ALY"/>
+                            <constraint firstItem="YIw-HC-J0i" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="o7W-XJ-ofY"/>
+                            <constraint firstItem="SUm-H3-lU6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ql5-VI-MoV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SUm-H3-lU6" secondAttribute="bottom" constant="8" id="xFJ-UU-utZ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="CapsulesMen" destination="rQ2-YM-1qC" id="Mlh-s2-dGy"/>
+                        <outlet property="DoneBtn" destination="SUm-H3-lU6" id="5QW-i9-IZD"/>
                         <outlet property="Shakes" destination="oNI-OU-RSb" id="HLK-kB-PCA"/>
                         <outlet property="freeAccount" destination="mWO-ov-bJg" id="ibf-rD-Esm"/>
                         <outlet property="myWebView" destination="HPz-qz-5Rc" id="8wE-Ij-Ox1"/>
@@ -99,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="554" y="496"/>
+            <point key="canvasLocation" x="646" y="333"/>
         </scene>
     </scenes>
     <resources>

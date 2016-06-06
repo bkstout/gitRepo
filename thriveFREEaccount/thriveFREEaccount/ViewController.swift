@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var freeAccount: UIButton!
     @IBOutlet weak var Shakes: UIButton!
     
+    @IBOutlet weak var doneBtn: UIButton!
     @IBOutlet weak var myWebView: UIWebView!
     
     override func viewDidLoad() {
@@ -33,23 +34,56 @@ class ViewController: UIViewController {
     }
 
     @IBAction func getMensCapsules(sender: AnyObject) {
+        thriveExperience.hidden = true
+        CapsulesMen.hidden = true
+        Shakes.hidden = true
+        freeAccount.hidden = true
+
         let capMenUrl = NSURL (string: "https://media.le-vel.com/Documents/THRV001M.pdf");
         let requestObj = NSURLRequest(URL: capMenUrl!);
+        
+        doneBtn.hidden = false
+        myWebView.hidden = false
         myWebView.loadRequest(requestObj);
     }
     
     @IBAction func getShakes(sender: AnyObject) {
+        thriveExperience.hidden = true
+        CapsulesMen.hidden = true
+        Shakes.hidden = true
+        freeAccount.hidden = true
+
         let shakeURL = NSURL (string: "https://bkstout.le-vel.com/Products/THRIVE/Mix");
         let requesShakej = NSURLRequest(URL: shakeURL!);
+        
+        doneBtn.hidden = false
+        myWebView.hidden = false
         myWebView.loadRequest(requesShakej);
     }
 
     @IBAction func makeFreeAccount(sender: AnyObject) {
+        thriveExperience.hidden = true
+        CapsulesMen.hidden = true
+        Shakes.hidden = true
+        freeAccount.hidden = true
+        
         let freeAcctUrl = NSURL (string: "\(promoterURL)/login");
         let requestAct = NSURLRequest(URL: freeAcctUrl!);
+        
+        doneBtn.hidden = false
+        myWebView.hidden = false
         myWebView.loadRequest(requestAct);
-
     }
     
+    @IBAction func doneBtnFunc(sender: AnyObject) {
+        myWebView.hidden = true
+        doneBtn.hidden = true
+        
+        thriveExperience.hidden = false
+        CapsulesMen.hidden = false
+        Shakes.hidden = false
+        freeAccount.hidden = false
+
+    }
 }
 
