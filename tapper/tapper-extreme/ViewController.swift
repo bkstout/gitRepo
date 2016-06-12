@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var currentTaps = 0
     
     //Outlets
+    
     @IBOutlet weak var logoImg: UIImageView!
     @IBOutlet weak var howManyTapsTxt: UITextField!
     @IBOutlet weak var playBtn: UIButton!
