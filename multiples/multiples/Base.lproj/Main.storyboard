@@ -3,8 +3,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -21,13 +28,61 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chalkboard" translatesAutoresizingMaskIntoConstraints="NO" id="k9g-Nz-sMJ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MULTIPLES" translatesAutoresizingMaskIntoConstraints="NO" id="8cw-cL-vLq">
+                                <rect key="frame" x="76" y="28" width="448" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8cw-cL-vLq" secondAttribute="height" multiplier="7:2" id="dXe-g8-Kvz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WhV-3S-aRv">
+                                <rect key="frame" x="164" y="324" width="272" height="268"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="bxr-ya-x9b"/>
+                                    <constraint firstAttribute="width" constant="272" id="o7h-4E-gJq"/>
+                                </constraints>
+                                <state key="normal" image="play">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKJ-el-i0I">
+                                <rect key="frame" x="195" y="396" width="211" height="101"/>
+                                <state key="normal" image="add">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Press ADD to add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vb-OJ-Xkg">
+                                <rect key="frame" x="173" y="164" width="255" height="54"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter multiple to add by" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fkf-My-3eH">
+                                <rect key="frame" x="164" y="285" width="272" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="272" id="wSw-ul-zva"/>
+                                    <constraint firstAttribute="height" constant="30" id="zO9-FO-hDQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fkf-My-3eH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3J8-SZ-bLd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="k9g-Nz-sMJ" secondAttribute="trailing" constant="-20" id="5EL-KX-xZR"/>
+                            <constraint firstItem="qKJ-el-i0I" firstAttribute="centerY" secondItem="WhV-3S-aRv" secondAttribute="centerY" id="6QK-Rf-Gpj"/>
+                            <constraint firstItem="qKJ-el-i0I" firstAttribute="centerX" secondItem="WhV-3S-aRv" secondAttribute="centerX" id="D1v-jb-YjF"/>
+                            <constraint firstItem="WhV-3S-aRv" firstAttribute="top" secondItem="fkf-My-3eH" secondAttribute="bottom" constant="9" id="J6F-qL-byM"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k9g-Nz-sMJ" secondAttribute="bottom" id="MkQ-Yj-b2p"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WhV-3S-aRv" secondAttribute="bottom" constant="8" id="Nxa-WE-svl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8cw-cL-vLq" secondAttribute="trailing" id="Ph0-Bb-vjz"/>
+                            <constraint firstItem="WhV-3S-aRv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SKE-KI-cHk"/>
+                            <constraint firstItem="8cw-cL-vLq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VGO-El-te5"/>
                             <constraint firstItem="k9g-Nz-sMJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="fuy-bZ-Yh1"/>
+                            <constraint firstItem="2vb-OJ-Xkg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g2J-13-lWH"/>
                             <constraint firstItem="k9g-Nz-sMJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="jwO-0L-jhZ"/>
+                            <constraint firstItem="8cw-cL-vLq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ljP-ML-PbE"/>
+                            <constraint firstItem="2vb-OJ-Xkg" firstAttribute="top" secondItem="8cw-cL-vLq" secondAttribute="bottom" constant="8" id="sLi-nr-fap"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,6 +92,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="MULTIPLES" width="533" height="124"/>
+        <image name="add" width="211" height="101"/>
         <image name="chalkboard" width="801" height="750"/>
+        <image name="play" width="272" height="268"/>
     </resources>
 </document>
