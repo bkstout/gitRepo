@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="isEven" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Results:  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hit-Pf-roe" userLabel="MessagesLbl">
+                                <rect key="frame" x="20" y="558" width="560" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="XOx-q9-JmX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oe-c5-4C4" userLabel="pressEnter">
+                                <rect key="frame" x="231" y="199" width="139" height="67"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Press Enter"/>
+                                <connections>
+                                    <action selector="pressedEnter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nxz-qm-ygP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Is Your Number Even" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbL-Xj-Wwb" userLabel="isEvenLbl">
+                                <rect key="frame" x="140" y="28" width="320" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="T4b-x2-MIY"/>
+                                    <constraint firstAttribute="width" constant="200" id="V3a-7v-iA1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter A Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RBN-ql-iHV" userLabel="entryFld">
+                                <rect key="frame" x="182" y="134" width="236" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RBN-ql-iHV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="47B-Ob-QPN"/>
+                            <constraint firstItem="0oe-c5-4C4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BTy-Zy-4Hp"/>
+                            <constraint firstItem="ZbL-Xj-Wwb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="QG8-tl-cJn"/>
+                            <constraint firstItem="Hit-Pf-roe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TYX-MM-MMu"/>
+                            <constraint firstItem="Hit-Pf-roe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="f0c-Hu-0tt"/>
+                            <constraint firstItem="0oe-c5-4C4" firstAttribute="top" secondItem="RBN-ql-iHV" secondAttribute="bottom" constant="35" id="jBb-4o-b2j"/>
+                            <constraint firstItem="ZbL-Xj-Wwb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kWN-Rn-Xti"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hit-Pf-roe" secondAttribute="bottom" constant="20" id="rkA-Tk-g1F"/>
+                            <constraint firstItem="ZbL-Xj-Wwb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="yVJ-6o-Pai"/>
+                            <constraint firstItem="RBN-ql-iHV" firstAttribute="top" secondItem="ZbL-Xj-Wwb" secondAttribute="bottom" constant="47" id="zPh-6S-TXi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="IsEvenLbl" destination="ZbL-Xj-Wwb" id="HsZ-Ch-cgY"/>
+                        <outlet property="entryFld" destination="RBN-ql-iHV" id="8t8-0s-8yh"/>
+                        <outlet property="isEvenLbl" destination="ZbL-Xj-Wwb" id="FvQ-xf-2nX"/>
+                        <outlet property="messagesLbl" destination="Hit-Pf-roe" id="Sqk-8F-QS3"/>
+                        <outlet property="pressEnterBtn" destination="0oe-c5-4C4" id="IiM-bw-XOY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>

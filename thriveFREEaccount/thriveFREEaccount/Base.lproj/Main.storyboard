@@ -24,6 +24,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <webView hidden="YES" opaque="NO" contentMode="scaleToFill" scalesPageToFit="YES" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPz-qz-5Rc">
+                                <rect key="frame" x="20" y="20" width="560" height="534"/>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="deviceRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </webView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="THRIVE8week" translatesAutoresizingMaskIntoConstraints="NO" id="YIw-HC-J0i">
                                 <rect key="frame" x="20" y="28" width="560" height="147"/>
                                 <constraints>
@@ -70,11 +75,6 @@
                                     <action selector="makeFreeAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uT3-Zw-BNI"/>
                                 </connections>
                             </button>
-                            <webView hidden="YES" opaque="NO" contentMode="scaleToFill" scalesPageToFit="YES" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPz-qz-5Rc">
-                                <rect key="frame" x="20" y="20" width="560" height="534"/>
-                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="deviceRGB"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                            </webView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUm-H3-lU6">
                                 <rect key="frame" x="20" y="562" width="560" height="30"/>
                                 <color key="backgroundColor" red="0.13294159059999999" green="0.81568627449999997" blue="0.024201253360000001" alpha="1" colorSpace="calibratedRGB"/>
